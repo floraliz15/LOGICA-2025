@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int valor, nota;
+    scanf("%d", &valor);
+    printf("%d\n", valor);
+    nota = valor / 100;
+    printf("%d nota(s) de R$ 100,00\n", nota);
+    valor = valor % 100;
+    nota = valor / 50;
+    printf("%d nota(s) de R$ 50,00\n", nota);
+    valor = valor % 50;
+    nota = valor / 20;
+    printf("%d nota(s) de R$ 20,00\n", nota);
+    valor = valor % 20;
+    nota = valor / 10;
+    printf("%d nota(s) de R$ 10,00\n", nota);
+    valor = valor % 10;
+    nota = valor / 5;
+    printf("%d nota(s) de R$ 5,00\n", nota);
+    valor = valor % 5;
+    nota = valor / 2;
+    printf("%d nota(s) de R$ 2,00\n", nota);
+    valor = valor % 2;
+    nota = valor / 1;
+    printf("%d nota(s) de R$ 1,00\n", nota);
+    return 0;
+}
